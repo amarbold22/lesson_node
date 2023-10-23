@@ -16,7 +16,7 @@ const data = fs.readFileSync("test.txt", { encoding: "utf-8" });
 console.log("Нийт үсгийн тоо: ", data.length);
 const parsedData = data.split(" ");
 console.log("Нийт үгийн тоо: ", parsedData.length);
-// console.log("Нийт үгийн тоо: ", parsedData);
+console.log("Нийт үгийн тоо: ", parsedData);
 const count = parsedData.reduce((prev, curr) => prev + curr.length, 0);
 const arr = [
   {
