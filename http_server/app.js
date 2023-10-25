@@ -24,6 +24,16 @@ app.post('/api/users', (req, res) => {
 })
 
 app.put('/api/users/:userId', (req, res) => {
+    const { userId } = req.params;
+    const newUserCont = { "id" : uuidv4(), ...req.body };
+    const { users } = JSON.parse(fs.readFileSync("users.json", { encoding: "utf-8" }));
+    const index = users.findIndex((el) => el.id === userId);
+    if(index < 0)
+        res.status(400).json({ message: `${userId} тай хэрэглэгч олдсонгүй`})
+    else{
+        users[index] = newUserCont;
+    }
+    fs.writeFileSync("users.json", JSON.stringify({ users }), { encoding: "utf-8" });
     console.log("Update User by ID");
     res.status(200).json({ message: "Success" });
 })
