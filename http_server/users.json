@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "7d83bdda-5ebb-4c9c-b720-867a8aca39d6",
+      "name": "Naraa",
+      "status": "online",
+      "email": "naraa@email.mn",
+      "department": "technology"
+    },
+    {
+      "id": "68bfd065-f807-4e6a-a872-733d51eb724b",
+      "name": "Naraa",
+      "status": "online",
+      "email": "naraa@email.mn",
+      "department": "technology"
+    },
+    {
+      "id": "0686a07b-6608-4b27-88c7-f91b1998ae71",
+      "name": "Naraa",
+      "status": "online",
+      "email": "naraa@email.mn",
+      "department": "technology"
+    }
+  ]
+}

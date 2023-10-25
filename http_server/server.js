@@ -12,7 +12,3 @@ const server = http.createServer((req, res) => {
 server.listen(8008, () => {
     console.log("Working");
 });
-
-const app = express();
-
-app.get("/", (trigger,response));
